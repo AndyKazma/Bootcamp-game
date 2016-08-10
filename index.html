@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gra Kamień papier nożyce</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">			  	
+		  	<div class="row hero text-center">
+				<div class="col-md-12">
+					<h1>Papier Kamień Nożyce</h1>
+				</div>
+			</div>	
+		  	<div class="row hero text-center">
+				<div class="col-md-12">			
+					<button class="btn btn-success btn-lg" onClick="newGame()">Nowa gra!</button><hr>
+				</div>
+			</div>
+		  	<div class="row hero text-center">
+				<div class="col-md-12">										
+					<button class="btn btn-oldstyle pick-button btn-lg" onclick="playerPick('rock')">Kamień <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+					</button>
+					<button class="btn btn-oldstyle pick-button btn-lg" onclick="playerPick('paper')">Papier <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+					</button>
+					<button class="btn btn-oldstyle pick-button btn-lg" onclick="playerPick('scissors')">Nożyce <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		  	<div class="row hero text-center">
+				<div class="col-md-12">
+					<hr><h3>BIEŻĄCA ROZGRYWKA. RUNDA <span id="roundNr"></span></h3><hr>
+				</div>
+			</div>					
+		  	<div class="row hero text-center">
+				<div class="col-md-12">							
+					<h4>Komputer wybrał: <span id="computerPick"></span></h4>
+					<h4>Gracz wybrał: <span id="playerPick"></span></h4>
+					<h4>Wynik rozgrywki: <span id="gameResult"></span></h4>
+				</div>
+			</div>
+				<table class="table table-bordered table-striped table-hover">
+					<thead>
+						<tr>
+					      <th colspan="2" class="text-center">Wynik końcowy</th>
+					    </tr>
+					    <tr>
+					      <th id="playerName">Gracz</th>
+					      <th>Komputer</th>
+					    </tr>
+					  </thead>
+					  <tbody><tr>
+					    <td id="playerScore">0</td>
+					    <td id="computerScore">0</td>
+					  </tr></tbody>
+				</table>
+				<h3 id="roundResult"></h3>
+				<script type="text/javascript" src="script.js"></script>
+		</div>
+	</body>
+</html>
